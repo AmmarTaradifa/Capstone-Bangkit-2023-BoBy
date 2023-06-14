@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Food Recommendation API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+  <h1>Food Recommendation</h1>
+  <form id="recommendation-form" action="/recommend" method="POST">
+      <label for="height">Height (cm):</label>
+      <input type="text" id="height" name="height" required><br><br>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="text" id="weight" name="weight" required><br><br>
+
+      <label for="age">Age (years):</label>
+      <input type="text" id="age" name="age" required><br><br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+      </select><br><br>
+
+      <label for="activity_level">Activity Level:</label>
+      <select id="activity_level" name="activity_level" required>
+          <option value="sedentary">Sedentary</option>
+          <option value="mild">Mild</option>
+          <option value="normal">Normal</option>
+          <option value="active">Active</option>
+          <option value="energetic">Energetic</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+  </form>
+
+  <br>
+  <br>
+  {{ response }}
+  <!-- <div id="recommendation-result"></div> -->
+
+  <!-- <script>
+      document.getElementById("recommendation-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          
+          // Get form data
+          var form = event.target;
+          var formData = new FormData(form);
+
+          // Send AJAX request
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", form.action, true);
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                  // Parse response JSON
+                  var response = JSON.parse(xhr.responseText);
+
+                  // Display recommended foods
+                  var resultDiv = document.getElementById("recommendation-result");
+                  resultDiv.innerHTML = "<h2>Recommended Foods:</h2>";
+
+                  var recommendedFoods = response["Recommended Foods"];
+                  for (var i = 0; i < recommendedFoods.length; i++) {
+                      var food = recommendedFoods[i][0];
+                      var calorie = recommendedFoods[i][1];
+                      resultDiv.innerHTML += "<p>" + food + " (Calories: " + calorie + ")</p>";
+                  }
+              }
+          };
+          xhr.send(formData);
+      });
+  </script> -->
+ </div>
+
+
+</body>
+</html>
