@@ -81,9 +81,20 @@ We want to overcome this health problem by providing an application to help peop
 # Documentation
 
 ## Machine Learning  Documentation
+### Obesty Prediction
 
+1. Load data from dataset : https://www.kaggle.com/datasets/tathagatbanerjee/obesity-dataset-uci-ml
+2. Data Preprocessing
+3. Model  : Decision Tree
+4. Test accuracy model using test data
+### Food Recommendation System
 
+### Food Image Classification
 
+1. Load  image data  from dataset : https://www.kaggle.com/datasets/imbikramsaha/food11
+2. Image data Augmentation
+3. Building model using deep learning
+4. Test model using test data
 ## Mobile Development Documentation
   
 
