@@ -92,8 +92,9 @@ We want to overcome this health problem by providing an application to help peop
 ### Food Recommendation System
 1. Load dataset from this link https://drive.google.com/drive/folders/1hxeGz5AP1HTNSFCHKccDnU5N6d70IqJ7?usp=sharing
 2. Data Preprocessing
-3. Using cosine similarity 
-4. Using content-based filltering to give the recommendation
+3. Using content-based filltering to give the recommendation
+4. Displays the results of food recommendations that do not exceed the daily calorie intake
+5. Covert model to save model
 
 ### Food Image Classification
 
