@@ -87,7 +87,13 @@ We want to overcome this health problem by providing an application to help peop
 2. Data Preprocessing
 3. Model  : Decision Tree
 4. Test accuracy model using test data
+5. Covert model to save model
+
 ### Food Recommendation System
+1. Load dataset from this link 
+2. Data Preprocessing
+3. Using cosine similarity 
+4. Using content-based filltering to give the recommendation
 
 ### Food Image Classification
 
@@ -95,6 +101,7 @@ We want to overcome this health problem by providing an application to help peop
 2. Image data Augmentation
 3. Building model using deep learning
 4. Test model using test data
+5. Convert model to tensorflow.js
 ## Mobile Development Documentation
   
 
