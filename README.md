@@ -44,7 +44,7 @@
     <li>
       <a href="#documentation">Documentation</a>
       <ul>
-        <li><a href="#machine-learning-development-documentation">Machine Learning Documentation</a></li>
+        <li><a href="#machine-learning--documentation">Machine Learning Documentation</a></li>
         <li><a href="#mobile-development-documentation">Mobile Documentation</a></li>
         <li><a href="#cloud-computing-documentation">Cloud Computing Documentation</a></li>
       </ul>
@@ -57,7 +57,7 @@
 
 BoBy - Body Balancy is an application that is used to tell people if they are get overweight or they body just in ideal condition. 
 
-This application also can recommend people what they need to do so they can get their ideal body
+This application also can recommend food and exercise for people what they need to do so they can get their ideal body
 
 We want to overcome this health problem by providing an application to help people get their ideal body so they can be healthier and be more productive.
 
@@ -81,6 +81,7 @@ We want to overcome this health problem by providing an application to help peop
 # Documentation
 
 ## Machine Learning  Documentation
+
 ### Obesty Prediction
 
 1. Load data from dataset : https://www.kaggle.com/datasets/tathagatbanerjee/obesity-dataset-uci-ml
@@ -102,10 +103,13 @@ We want to overcome this health problem by providing an application to help peop
 2. Image data Augmentation
 3. Building model using deep learning
 4. Test model using test data
-5. Convert model to tensorflow.js
+5. Convert model to tensorflowlite
 ## Mobile Development Documentation
-  
 
+1. We create kotlin app with retrofit
+2. We use Firebase for Auth User (Sign In / Sign UP)
+3. Project repository in [here](https://github.com/KiraneTMS/BodyBalancy)
+   
 
 ## Cloud Computing Documentation
 
